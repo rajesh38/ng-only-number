@@ -3,10 +3,23 @@ Angular directive to restrict input to only allow numbers in textbox while typin
 
 # How to use
 In your angular app add **ngOnlyNumberApp** as a dependency.
-Add the directive **ng-only-number** as an attribute to an input textbox
-You can limit the number of digits before decimal point using **data-max-length**. If not specified it will allow any number of digits before decimal point. For limiting number of digits after decimal point you can use attribute **data-max-decimal-points**
+Add the directive **ng-only-number** as an attribute to an input textbox.
 
-## Code
+### Example
 ```html
-<input type="text" ng-only-number data-max-length=3 data-max-decimal-points=1>
+<input type="text" ng-only-number>
+```
+
+You can limit the number of digits before decimal point using **data-max-length**. If not specified it will allow any number of digits before decimal point.
+
+### Example
+```html
+<input type="text" ng-only-number data-max-length=3>
+```
+
+For limiting number of digits after decimal point you can use attribute **data-max-decimal-points**. If not specified it will allow any number of digits after decimal point.
+
+### Example
+```html
+<input type="text" ng-only-number data-max-decimal-points=1>
 ```
