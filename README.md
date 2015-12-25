@@ -1,4 +1,4 @@
-# ng-only-input
+# ng-only-number
 Angular directive to restrict input to only allow numbers in textbox while typing along with additional options to limit no of digits before and after decimal point.
 
 # How to use
